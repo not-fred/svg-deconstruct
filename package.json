@@ -1,0 +1,26 @@
+{
+  "name": "svg-deconstruct",
+  "bin": {
+    "svg-deconstruct": "svg-deconstruct.js"
+  },
+  "version": "1.0.0",
+  "description": "An SVG deconstructor that splits an SVG file into its outermost groups, such that a file is formed for each individual group. If Inkscape was used, the individual files will be their layer names.",
+  "main": "svg-deconstruct.js",
+  "author": "Zaw Lin Htoo",
+  "dependencies": {
+    "commander": "^2.15.1",
+    "htmlparser2": "^3.9.2"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Lit3Nitride/svg-deconstruct",
+  "bugs": {
+    "url": "https://github.com/Lit3Nitride/svg-deconstruct/issues"
+  },
+  "scripts": {
+    "install": "node svgo/install.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lit3Nitride/svg-deconstruct.git"
+  }
+}
