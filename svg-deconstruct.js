@@ -74,6 +74,10 @@ const handler = (err, dom) => {
             svgo
               .optimize(currSVG)
               .then((result) => writeSVG(result.data, id))
+              .catch((err) => {
+                if (err)
+                  throw err
+              })
           else
             writeSVG(currSVG.replace(/[\r\n]^\s*$/gm, ""), id)
         })
@@ -154,7 +158,7 @@ function svgDeconstruct(input, callback, repeat=false) {
         if (err.code == "EEXIST")
           readline.question(overwriteQuestion(outputDir), (ans = "n") => {
             repeatedQuestion = true
-            if (ans.trim()[0].toLowerCase() == "y")
+            if (ans.trim() && ans.trim()[0].toLowerCase() == "y")
               finishWrite(rawSVG)
             else
               callback()
