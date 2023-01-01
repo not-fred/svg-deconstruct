@@ -1,3 +1,6 @@
+# THIS REPOSITORY IS ARCHIVED
+[Inkscape 1.2](https://inkscape.org/news/2022/05/16/inkscape-12/) has introduced the ability to export each layer as a separate SVG file, which removes the need for this script.
+
 # SVG Deconstruct
 An SVG deconstructor that splits an SVG file into its outermost groups,
 such that a file is formed for each individual group.
